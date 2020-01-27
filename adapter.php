@@ -10,13 +10,14 @@ class EngProgrammInterface implements ProgrammInterface{
         $this->germInterf = new GermanProgrammInterface();
     }
     public function getLabels(){
-        echo "english labels";
+        echo "english labels\n";
+        $this->germInterf->getGermanLabels();
     }
 }
 
 class GermanProgrammInterface{
     
-    public function getLabels(){
+    public function getGermanLabels(){
         echo "german labels\n";
     }
 }
